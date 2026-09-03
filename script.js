@@ -60,7 +60,7 @@ const products = [
         id: 5,
         name: "Oversized Streetwear Tee",
         price: 29.99,
-        category: "women",
+        category: "men",
         image: "https://images.unsplash.com/photo-1598033129183-c4f50c736f10?auto=format&fit=crop&w=900&q=85",
         badge: "NEW",
         description:
