@@ -1,104 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Wrizdixu's Shop | Modern Fashion</title>
+    <meta name="description"
+        content="Wrizdixu's Shop — Modern fashion, premium essentials and streetwear.">
 
-    <link rel="stylesheet" href="style.css">
+    <title>Wrizdixu's Shop — Modern Fashion</title>
 
+    <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
+
+    <!-- IMPORTANT: Relative path for GitHub Pages -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- ================= NAVBAR ================= -->
+    <!-- ================= HEADER ================= -->
 
     <header class="header">
 
-        <a href="#home" class="logo">
-            Wrizdixu<span>.</span>
-        </a>
+        <div class="nav-container">
 
-        <nav class="navbar">
+            <a href="#home" class="logo">
+                Wrizdixu<span>.</span>
+            </a>
 
-            <a href="#home">Home</a>
-            <a href="#shop">Shop</a>
-            <a href="#categories">Categories</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
+            <nav class="nav">
 
-        </nav>
+                <a href="#home">Home</a>
+                <a href="#shop">Shop</a>
+                <a href="#categories">Categories</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
 
-        <div class="header-actions">
+            </nav>
 
-            <button class="icon-btn" id="searchBtn">
-                🔍
-            </button>
+            <div class="nav-actions">
 
-            <button class="icon-btn" id="cartBtn">
-                🛒
-                <span class="cart-count">0</span>
-            </button>
+                <button class="icon-btn" id="searchBtn" aria-label="Search">
+                    🔍
+                </button>
+
+                <button class="cart-btn" id="cartBtn">
+                    🛒
+                    <span id="cartCount">0</span>
+                </button>
+
+                <button class="menu-btn" id="menuBtn">
+                    ☰
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- SEARCH PANEL -->
+
+        <div class="search-panel" id="searchPanel">
+
+            <div class="search-box">
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search products..."
+                    autocomplete="off"
+                >
+
+                <button id="closeSearch">
+                    ✕
+                </button>
+
+            </div>
 
         </div>
 
     </header>
 
 
-    <!-- ================= SEARCH PANEL ================= -->
-
-    <div class="search-panel" id="searchPanel">
-
-        <div class="search-wrapper">
-
-            <input
-                type="text"
-                id="searchInput"
-                placeholder="Search jackets, shoes, bags..."
-            >
-
-            <button id="closeSearch">
-                ✕
-            </button>
-
-        </div>
-
-    </div>
-
-
     <!-- ================= HERO ================= -->
 
-    <main id="home">
+    <main>
 
-        <section class="hero">
+        <section class="hero" id="home">
 
             <div class="hero-content">
 
-                <span class="hero-tag">
+                <p class="eyebrow">
                     NEW COLLECTION 2026
-                </span>
-
-                <h1>
-                    Elevate
-                    <span>Your Style.</span>
-                </h1>
-
-                <p>
-                    Discover modern fashion pieces designed
-                    for everyday confidence and effortless style.
                 </p>
 
-                <a href="#shop" class="hero-btn">
-                    Shop Collection
-                    <span>→</span>
+                <h1>
+                    Elevate<br>
+                    Your <span>Style.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Discover modern fashion essentials designed
+                    for people who want to stand out.
+                </p>
+
+                <a href="#shop" class="primary-btn">
+                    Shop Collection →
                 </a>
 
             </div>
@@ -106,92 +115,76 @@
             <div class="hero-image">
 
                 <img
-                    src="https://images.unsplash.com/photo-1445205170230-053b83016050?auto=format&fit=crop&w=1400&q=85"
-                    alt="Fashion collection"
+                    src="https://images.unsplash.com/photo-1445205170230-053b83016050?auto=format&fit=crop&w=1200&q=85"
+                    alt="Modern fashion collection"
                 >
 
             </div>
 
         </section>
 
-    </main>
 
+        <!-- ================= FEATURES ================= -->
 
-    <!-- ================= FEATURES ================= -->
+        <section class="features">
 
-    <section class="features">
-
-        <div class="feature">
-
-            <span>🚚</span>
-
-            <div>
-                <h3>Free Shipping</h3>
-                <p>On orders over $100</p>
+            <div class="feature">
+                <span>🚚</span>
+                <div>
+                    <strong>Free Shipping</strong>
+                    <p>On orders over $50</p>
+                </div>
             </div>
 
-        </div>
-
-
-        <div class="feature">
-
-            <span>↩️</span>
-
-            <div>
-                <h3>Easy Returns</h3>
-                <p>30 day return policy</p>
+            <div class="feature">
+                <span>↩️</span>
+                <div>
+                    <strong>Easy Returns</strong>
+                    <p>30 day returns</p>
+                </div>
             </div>
 
-        </div>
-
-
-        <div class="feature">
-
-            <span>🔒</span>
-
-            <div>
-                <h3>Secure Payment</h3>
-                <p>100% secure checkout</p>
+            <div class="feature">
+                <span>🔒</span>
+                <div>
+                    <strong>Secure Payment</strong>
+                    <p>100% secure checkout</p>
+                </div>
             </div>
 
-        </div>
-
-
-        <div class="feature">
-
-            <span>💬</span>
-
-            <div>
-                <h3>Support</h3>
-                <p>We're here to help</p>
+            <div class="feature">
+                <span>⭐</span>
+                <div>
+                    <strong>Premium Quality</strong>
+                    <p>Selected for you</p>
+                </div>
             </div>
 
-        </div>
-
-    </section>
+        </section>
 
 
-    <!-- ================= SHOP ================= -->
+        <!-- ================= SHOP ================= -->
 
-    <section class="section" id="shop">
+        <section class="shop-section" id="shop">
 
-        <div class="section-heading">
+            <div class="section-heading">
 
-            <div>
+                <div>
+                    <p class="eyebrow">OUR COLLECTION</p>
 
-                <span>OUR COLLECTION</span>
+                    <h2>
+                        Trending Products
+                    </h2>
 
-                <h2>Trending Products</h2>
-
-            </div>
-
-
-            <div class="shop-tools">
+                    <p>
+                        Find your next favorite piece.
+                    </p>
+                </div>
 
                 <select id="sortSelect">
 
                     <option value="default">
-                        Sort By
+                        Sort: Featured
                     </option>
 
                     <option value="low">
@@ -202,323 +195,213 @@
                         Price: High to Low
                     </option>
 
-                    <option value="name">
-                        Name
+                    <option value="az">
+                        Name: A-Z
                     </option>
 
                 </select>
 
             </div>
 
-        </div>
 
+            <!-- CATEGORY FILTER -->
 
-        <!-- CATEGORY FILTER -->
+            <div class="categories" id="categories">
 
-        <div class="filter-buttons">
+                <button class="category-btn active" data-category="all">
+                    All
+                </button>
 
-            <button class="filter-btn active" data-category="all">
-                All
-            </button>
+                <button class="category-btn" data-category="men">
+                    Men
+                </button>
 
-            <button class="filter-btn" data-category="men">
-                Men
-            </button>
+                <button class="category-btn" data-category="women">
+                    Women
+                </button>
 
-            <button class="filter-btn" data-category="women">
-                Women
-            </button>
+                <button class="category-btn" data-category="shoes">
+                    Shoes
+                </button>
 
-            <button class="filter-btn" data-category="shoes">
-                Shoes
-            </button>
-
-            <button class="filter-btn" data-category="accessories">
-                Accessories
-            </button>
-
-        </div>
-
-
-        <!-- PRODUCTS -->
-
-        <div class="products-grid" id="productsGrid"></div>
-
-        <p class="no-products" id="noProducts">
-            No products found.
-        </p>
-
-    </section>
-
-
-    <!-- ================= CATEGORIES ================= -->
-
-    <section class="section categories-section" id="categories">
-
-        <div class="section-heading center">
-
-            <div>
-
-                <span>EXPLORE</span>
-
-                <h2>Shop By Category</h2>
+                <button class="category-btn" data-category="accessories">
+                    Accessories
+                </button>
 
             </div>
 
-        </div>
+
+            <!-- PRODUCTS -->
+
+            <div class="products-grid" id="productsGrid">
+            </div>
+
+        </section>
 
 
-        <div class="categories-grid">
+        <!-- ================= BANNER ================= -->
 
-            <button
-                class="category-card"
-                data-category="men"
-            >
-
-                <div class="category-icon">
-                    👔
-                </div>
-
-                <h3>Men</h3>
-
-                <p>Modern essentials</p>
-
-            </button>
-
-
-            <button
-                class="category-card"
-                data-category="women"
-            >
-
-                <div class="category-icon">
-                    👗
-                </div>
-
-                <h3>Women</h3>
-
-                <p>Everyday fashion</p>
-
-            </button>
-
-
-            <button
-                class="category-card"
-                data-category="shoes"
-            >
-
-                <div class="category-icon">
-                    👟
-                </div>
-
-                <h3>Shoes</h3>
-
-                <p>Step up your style</p>
-
-            </button>
-
-
-            <button
-                class="category-card"
-                data-category="accessories"
-            >
-
-                <div class="category-icon">
-                    👜
-                </div>
-
-                <h3>Accessories</h3>
-
-                <p>Complete your look</p>
-
-            </button>
-
-        </div>
-
-    </section>
-
-
-    <!-- ================= SALE BANNER ================= -->
-
-    <section class="sale-section">
-
-        <div class="sale-content">
-
-            <span>LIMITED TIME OFFER</span>
-
-            <h2>
-                Up to <strong>40% OFF</strong>
-            </h2>
-
-            <p>
-                Upgrade your wardrobe with our selected
-                fashion essentials.
-            </p>
-
-            <a href="#shop">
-                Shop Sale →
-            </a>
-
-        </div>
-
-    </section>
-
-
-    <!-- ================= ABOUT ================= -->
-
-    <section class="section about-section" id="about">
-
-        <div class="about-box">
+        <section class="style-banner">
 
             <div>
 
-                <span>ABOUT WRIZDIXU'S</span>
+                <p class="eyebrow">
+                    WRIZDIXU EDIT
+                </p>
 
                 <h2>
-                    Style that feels
-                    <strong>like you.</strong>
+                    Fashion that<br>
+                    feels like you.
                 </h2>
+
+                <a href="#shop" class="outline-btn">
+                    Explore Collection
+                </a>
 
             </div>
 
-            <p>
-                Wrizdixu's Shop is a modern e-commerce concept
-                focused on clean design, responsive layouts,
-                smooth interactions and an enjoyable shopping
-                experience.
-            </p>
-
-        </div>
-
-    </section>
-
-
-    <!-- ================= NEWSLETTER ================= -->
-
-    <section class="newsletter">
-
-        <div>
-
-            <span>STAY IN THE LOOP</span>
-
-            <h2>
-                Get style updates.
-            </h2>
-
-            <p>
-                Subscribe for new arrivals and special offers.
-            </p>
-
-        </div>
-
-
-        <form id="newsletterForm">
-
-            <input
-                type="email"
-                placeholder="Your email address"
-                required
+            <img
+                src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1200&q=85"
+                alt="Fashion editorial"
             >
 
-            <button type="submit">
-                Subscribe
-            </button>
-
-        </form>
-
-    </section>
+        </section>
 
 
-    <!-- ================= CONTACT ================= -->
+        <!-- ================= ABOUT ================= -->
 
-    <section class="section contact-section" id="contact">
+        <section class="about-section" id="about">
 
-        <div class="contact-box">
+            <div class="about-image">
 
-            <span>NEED HELP?</span>
+                <img
+                    src="https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&w=1000&q=85"
+                    alt="Fashion clothing"
+                >
 
-            <h2>
-                Let's talk about
-                <strong>your style.</strong>
-            </h2>
+            </div>
 
-            <p>
-                Have a question about a product or your order?
-                We'd love to hear from you.
-            </p>
+            <div class="about-content">
 
-            <a href="mailto:your-email@example.com">
-                Contact Us →
-            </a>
+                <p class="eyebrow">
+                    ABOUT WRIZDIXU
+                </p>
 
-        </div>
+                <h2>
+                    Designed for<br>
+                    the modern you.
+                </h2>
 
-    </section>
+                <p>
+                    Wrizdixu is a modern fashion concept built around
+                    clean design, comfortable essentials and timeless
+                    streetwear.
+                </p>
+
+                <p>
+                    We believe great style doesn't need to be complicated.
+                    Every piece is selected to help you create your own look.
+                </p>
+
+                <a href="#shop" class="primary-btn">
+                    Discover More →
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CONTACT ================= -->
+
+        <section class="contact-section" id="contact">
+
+            <div class="contact-content">
+
+                <p class="eyebrow">
+                    GET IN TOUCH
+                </p>
+
+                <h2>
+                    Let's talk.
+                </h2>
+
+                <p>
+                    Have a question about our products?
+                    We'd love to hear from you.
+                </p>
+
+                <a
+                    href="mailto:your-email@example.com"
+                    class="primary-btn"
+                >
+                    Email Us →
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
 
 
     <!-- ================= FOOTER ================= -->
 
-    <footer>
+    <footer class="footer">
 
-        <div class="footer-top">
+        <div class="footer-main">
 
-            <div>
+            <div class="footer-brand">
 
                 <a href="#home" class="logo">
                     Wrizdixu<span>.</span>
                 </a>
 
                 <p>
-                    Modern fashion for modern lifestyles.
+                    Modern fashion for modern minds.
                 </p>
 
             </div>
 
-
-            <div class="footer-column">
+            <div class="footer-links">
 
                 <h4>Shop</h4>
 
                 <a href="#shop">All Products</a>
-                <a href="#categories">Men</a>
-                <a href="#categories">Women</a>
-                <a href="#categories">Shoes</a>
+                <a href="#shop">Men</a>
+                <a href="#shop">Women</a>
+                <a href="#shop">Shoes</a>
 
             </div>
 
-
-            <div class="footer-column">
+            <div class="footer-links">
 
                 <h4>Company</h4>
 
                 <a href="#about">About</a>
                 <a href="#contact">Contact</a>
-                <a href="#shop">Collections</a>
 
             </div>
 
-
-            <div class="footer-column">
+            <div class="footer-links">
 
                 <h4>Follow</h4>
 
                 <a href="#">Instagram</a>
                 <a href="#">GitHub</a>
-                <a href="#">Facebook</a>
 
             </div>
 
         </div>
 
-
         <div class="footer-bottom">
 
             <p>
-                © 2026 Wrizdixu's Shop. All rights reserved.
+                © 2026 Wrizdixu. All rights reserved.
             </p>
 
             <p>
-                Built with HTML, CSS & JavaScript.
+                Made with ♥
             </p>
 
         </div>
@@ -532,43 +415,39 @@
 
         <div class="product-modal">
 
-            <button
-                class="modal-close"
-                id="closeModal"
-            >
+            <button class="modal-close" id="closeModal">
                 ✕
             </button>
 
-
             <div class="modal-image">
 
-                <img
-                    id="modalImage"
-                    src=""
-                    alt=""
-                >
+                <img id="modalImage" src="" alt="">
 
             </div>
 
+            <div class="modal-details">
 
-            <div class="modal-info">
+                <span class="modal-badge" id="modalBadge">
+                    NEW
+                </span>
 
-                <span id="modalCategory"></span>
+                <h2 id="modalName">
+                    Product
+                </h2>
 
-                <h2 id="modalName"></h2>
-
-                <p id="modalDescription"></p>
-
-                <div
-                    class="modal-price"
-                    id="modalPrice">
+                <div class="modal-price" id="modalPrice">
+                    $0.00
                 </div>
 
+                <p id="modalDescription">
+                    Product description.
+                </p>
+
                 <button
-                    class="add-modal-btn"
+                    class="primary-btn full-btn"
                     id="modalAddCart"
                 >
-                    Add To Cart
+                    Add to Cart
                 </button>
 
             </div>
@@ -580,22 +459,17 @@
 
     <!-- ================= CART ================= -->
 
-    <div
-        class="cart-overlay"
-        id="cartOverlay">
-    </div>
+    <div class="cart-overlay" id="cartOverlay"></div>
 
-
-    <aside
-        class="cart-drawer"
-        id="cartDrawer"
-    >
+    <aside class="cart-drawer" id="cartDrawer">
 
         <div class="cart-header">
 
             <div>
 
-                <span>YOUR BAG</span>
+                <p class="eyebrow">
+                    YOUR BAG
+                </p>
 
                 <h2>
                     Shopping Cart
@@ -610,26 +484,23 @@
         </div>
 
 
-        <div
-            class="cart-items"
-            id="cartItems">
-        </div>
+        <div class="cart-items" id="cartItems">
 
+            <div class="empty-cart">
 
-        <div
-            class="empty-cart"
-            id="emptyCart"
-        >
+                <div class="empty-icon">
+                    🛒
+                </div>
 
-            <div>🛒</div>
+                <h3>
+                    Your cart is empty
+                </h3>
 
-            <h3>
-                Your cart is empty
-            </h3>
+                <p>
+                    Add something you love.
+                </p>
 
-            <p>
-                Add some products to get started.
-            </p>
+            </div>
 
         </div>
 
@@ -648,11 +519,8 @@
 
             </div>
 
-            <button
-                class="checkout-btn"
-                id="checkoutBtn"
-            >
-                Proceed to Checkout
+            <button class="checkout-btn" id="checkoutBtn">
+                Checkout →
             </button>
 
         </div>
@@ -660,16 +528,15 @@
     </aside>
 
 
-    <!-- ================= TOAST ================= -->
+    <!-- TOAST -->
 
-    <div
-        class="cart-toast"
-        id="cartToast">
+    <div class="toast" id="toast">
+        Added to cart!
     </div>
 
 
+    <!-- IMPORTANT: Relative path -->
     <script src="script.js"></script>
 
 </body>
-
 </html>
